@@ -5,6 +5,7 @@ import gensim, logging
 # import modules & set up logging
 import gensim, logging
 
+utf8 = 'utf8'
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 # sentences = [['first', 'sentence'], ['second', 'sentence']]
 # train word2vec on the two sentences
@@ -14,15 +15,115 @@ import Tools
 
 
 def get_sentence_list():
+    import jieba.posseg as pseg
+    sentence_list = []
+
+    tmp = Tools.get_sentences_from_excel('../data/彩电业务.xlsx', [3, 4])
+    counter = len(tmp)
+    for line in tmp:
+        counter -= 1
+        print 'left:', counter,' total:',len(tmp)
+        sentence = []
+        if len(line) == 0:
+            continue
+        comment = line[0]
+        if type(comment) != unicode:
+            continue
+        str_c = comment.encode(utf8)
+        if str_c == 'sentence':
+            continue
+        seg_list = pseg.cut(str_c)
+        for w in seg_list:
+            if w.flag != 'x' and w.flag != 'eng':
+                sentence.append(w.word)
+        # model.train(line)
+        sentence_list.append(sentence)
+
+    tmp = Tools.get_sentences_from_excel('../data/彩电产品.xlsx', [3, 4])
+    counter = len(tmp)
+    for line in tmp:
+        counter -= 1
+        print 'left:', counter, ' total:', len(tmp)
+        sentence = []
+        if len(line) == 0:
+            continue
+        comment = line[0]
+        if type(comment) != unicode:
+            continue
+        str_c = comment.encode(utf8)
+        seg_list = pseg.cut(str_c)
+        for w in seg_list:
+            if w.flag != 'x' and w.flag != 'eng':
+                sentence.append(w.word)
+        # model.train(line)
+        sentence_list.append(sentence)
+    tmp = Tools.get_sentences_from_excel('../data/彩电平台.xlsx', [3, 4])
+    counter = len(tmp)
+    for line in tmp:
+        counter -= 1
+        print 'left:', counter, ' total:', len(tmp)
+        sentence = []
+        if len(line) == 0:
+            continue
+        comment = line[0]
+        if type(comment) != unicode:
+            continue
+        str_c = comment.encode(utf8)
+        seg_list = pseg.cut(str_c)
+        for w in seg_list:
+            if w.flag != 'x' and w.flag != 'eng':
+                sentence.append(w.word)
+        # model.train(line)
+        sentence_list.append(sentence)
+
+
+    tmp = Tools.get_sentences_from_excel('../data/彩电服务.xlsx', [3, 4])
+    counter = len(tmp)
+    for line in tmp:
+        counter -= 1
+        print 'left:', counter, ' total:', len(tmp)
+        sentence = []
+        if len(line) == 0:
+            continue
+        comment = line[0]
+        if type(comment) != unicode:
+            continue
+        str_c = comment.encode(utf8)
+        seg_list = pseg.cut(str_c)
+        for w in seg_list:
+            if w.flag != 'x' and w.flag != 'eng':
+                sentence.append(w.word)
+        # model.train(line)
+        sentence_list.append(sentence)
+
+    tmp = Tools.get_sentences_from_excel('../data/彩电其他.xlsx', [1, 2])
+    counter = len(tmp)
+    for line in tmp:
+        counter -= 1
+        print 'left:', counter, ' total:', len(tmp)
+        sentence = []
+        if len(line) == 0:
+            continue
+        comment = line[0]
+        if type(comment) != unicode:
+            continue
+        str_c = comment.encode(utf8)
+        seg_list = pseg.cut(str_c)
+        for w in seg_list:
+            if w.flag != 'x' and w.flag != 'eng':
+                sentence.append(w.word)
+        # model.train(line)
+        sentence_list.append(sentence)
+
     path = '../data/comment_origin.xlsx'
     data = xlrd.open_workbook(path)
     table = data.sheets()[0]
     nrows = table.nrows
-    utf8 = 'utf8'
+
     print 'count rows in path :' + str(nrows)
-    import jieba.posseg as pseg
-    sentence_list = []
+
     for i in range(1, nrows):
+        # print 'left:', nrows-i, ' total:', nrows
         line = []
         comment = table.row_values(i)[1:1 + 1][0]
         if type(comment) != unicode:
@@ -35,77 +136,11 @@ def get_sentence_list():
         # model.train(line)
         sentence_list.append(line)
 
-    sentence_list = Tools.get_sentences_from_excel('../data/彩电业务.xlsx', [3, 4])
-    for line in sentence_list:
-        sentence = []
-        comment = line[0]
-        if type(comment) != unicode:
-            continue
-        str_c = comment.encode(utf8)
-        seg_list = pseg.cut(str_c)
-        for w in seg_list:
-            if w.flag != 'x' and w.flag != 'eng':
-                sentence.append(w.word)
-        # model.train(line)
-        sentence_list.append(sentence)
-
-    sentence_list = Tools.get_sentences_from_excel('../data/彩电产品.xlsx', [3, 4])
-    for line in sentence_list:
-        sentence = []
-        comment = line[0]
-        if type(comment) != unicode:
-            continue
-        str_c = comment.encode(utf8)
-        seg_list = pseg.cut(str_c)
-        for w in seg_list:
-            if w.flag != 'x' and w.flag != 'eng':
-                sentence.append(w.word)
-        # model.train(line)
-        sentence_list.append(sentence)
-    sentence_list = Tools.get_sentences_from_excel('../data/彩电平台.xlsx', [3, 4])
-    for line in sentence_list:
-        sentence = []
-        comment = line[0]
-        if type(comment) != unicode:
-            continue
-        str_c = comment.encode(utf8)
-        seg_list = pseg.cut(str_c)
-        for w in seg_list:
-            if w.flag != 'x' and w.flag != 'eng':
-                sentence.append(w.word)
-        # model.train(line)
-        sentence_list.append(sentence)
-    sentence_list = Tools.get_sentences_from_excel('../data/彩电服务.xlsx', [3, 4])
-    for line in sentence_list:
-        sentence = []
-        comment = line[0]
-        if type(comment) != unicode:
-            continue
-        str_c = comment.encode(utf8)
-        seg_list = pseg.cut(str_c)
-        for w in seg_list:
-            if w.flag != 'x' and w.flag != 'eng':
-                sentence.append(w.word)
-        # model.train(line)
-        sentence_list.append(sentence)
-    sentence_list = Tools.get_sentences_from_excel('../data/彩电其他.xlsx', [1, 2])
-    for line in sentence_list:
-        sentence = []
-        comment = line[0]
-        if type(comment) != unicode:
-            continue
-        str_c = comment.encode(utf8)
-        seg_list = pseg.cut(str_c)
-        for w in seg_list:
-            if w.flag != 'x' and w.flag != 'eng':
-                sentence.append(w.word)
-        # model.train(line)
-        sentence_list.append(sentence)
     return sentence_list
 
 
 model = gensim.models.Word2Vec(get_sentence_list(), min_count=1)
-model.save(u"review.model.bin", binary=True)
+model.save(u"review.model.bin")
 
 
 # model = gensim.models.Word2Vec.load_word2vec_format(u"review.model.bin", binary=True)

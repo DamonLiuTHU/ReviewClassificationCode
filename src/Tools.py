@@ -37,6 +37,7 @@ def read_content_from_txt_with_paths(paths):
     target.close()
     return
 
+
 def get_cut_result_for_sentence_with_no_stop_word_or_number(sentence):
     result = []
     split_result = jieba.cut(sentence)
@@ -58,14 +59,13 @@ def get_sentences_from_excel(path, column_index_list):
     data = xlrd.open_workbook(path)
     table = data.sheets()[0]
     nrows = table.nrows
-    print 'count rows in path :' + str(nrows)
+    print 'count rows in path :' + str(nrows), path
     for i in range(nrows):
         comment = []
         for index in column_index_list:
             comment.append((table.row_values(i)[index:index + 1])[0])
         result.append(comment)
     return result
-
 
 # paths = ['../txtfiles/chanpin.txt',
 #          '../txtfiles/fuwu.txt', '../txtfiles/pingtai.txt', '../txtfiles/qita.txt',
