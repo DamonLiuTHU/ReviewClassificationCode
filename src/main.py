@@ -1,5 +1,7 @@
-import gensim_test
 import numpy as np
+
+from src import gensim_test
+
 
 def numberarray(length, number):
     array = []
@@ -80,8 +82,6 @@ x_test = labelizeReviews(x_test, 'TEST')
 unsup_reviews = labelizeReviews(unsup_reviews, 'UNSUP')
 
 # Step 2
-
-import random
 
 size = 400
 

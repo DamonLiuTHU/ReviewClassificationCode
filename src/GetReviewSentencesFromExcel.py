@@ -65,7 +65,7 @@ def get_sentences_from_excel(path, column_index_list):
     for i in range(1, nrows):
         comment = []
         for index in column_index_list:
-            comment.append(table.row_values(i)[index:index + 1])
+            comment.append(table.row_values(i)[index:index + 1][0])
         result.append(comment)
     return result
 
