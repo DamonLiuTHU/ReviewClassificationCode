@@ -139,17 +139,17 @@ def get_sentence_list():
     return sentence_list
 
 
-model = gensim.models.Word2Vec(get_sentence_list(), min_count=1)
-model.save(u"review.model.bin")
+# model = gensim.models.Word2Vec(get_sentence_list(), min_count=1)
+# model.save(u"review.model.bin")
 
 
-# model = gensim.models.Word2Vec.load_word2vec_format(u"review.model.bin", binary=True)
+model = gensim.models.Word2Vec.load(u"review.model.bin")
 
 
 # # 计算两个词的相似度/相关程度
 # y1 = model.similarity(u"不错", u"好")
 # print u"【不错】和【好】的相似度为：", y1
-# print "--------\n"s
+# print "--------\n"
 #
 # # 计算某个词的相关词列表
 # y2 = model.most_similar(u"京东", topn=20)  # 20个最相关的
