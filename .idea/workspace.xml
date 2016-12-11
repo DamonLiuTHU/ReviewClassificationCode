@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfa40bbe-757b-4639-9cb5-7db859e50c05" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gensim_word2vec.py" afterPath="$PROJECT_DIR$/src/gensim_word2vec.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/review.model.bin" afterPath="$PROJECT_DIR$/src/review.model.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/average_method.py" afterPath="$PROJECT_DIR$/src/average_method.py" />
     </list>
     <ignored path="Word2VecForBDS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,7 +21,7 @@
     <SUITE FILE_PATH="coverage/ReviewClassificationCode$gensim_word2vec.coverage" NAME="gensim_word2vec Coverage Results" MODIFIED="1481391868848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/Word2VecForBDS$GetReviewSentencesFromExcel.coverage" NAME="GetReviewSentencesFromExcel Coverage Results" MODIFIED="1481012873598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ExcelProcessor" />
     <SUITE FILE_PATH="coverage/ReviewClassificationCode$average_method.coverage" NAME="average_method Coverage Results" MODIFIED="1481374292448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Method2" />
-    <SUITE FILE_PATH="coverage/ReviewClassificationCode$average_method__1_.coverage" NAME="average_method (1) Coverage Results" MODIFIED="1481385931204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/ReviewClassificationCode$average_method__1_.coverage" NAME="average_method (1) Coverage Results" MODIFIED="1481424771254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/ReviewClassificationCode$load_google_w2v_bin_file.coverage" NAME="load_google_w2v_bin_file Coverage Results" MODIFIED="1481369682886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealWithVector" />
     <SUITE FILE_PATH="coverage/Word2VecForBDS$load_google_w2v_bin_file.coverage" NAME="load_google_w2v_bin_file Coverage Results" MODIFIED="1481006342012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealWithVector" />
     <SUITE FILE_PATH="coverage/Word2VecForBDS$word2vec_test.coverage" NAME="word2vec_test Coverage Results" MODIFIED="1481004741837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealWithVector" />
@@ -56,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gensim_word2vec.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gensim_word2vec.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gensim_word2vec.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="168" column="30" selection-start-line="148" selection-start-column="2" selection-end-line="168" selection-end-column="30" />
+            <state relative-caret-position="218">
+              <caret line="158" column="20" selection-start-line="158" selection-start-column="20" selection-end-line="158" selection-end-column="20" />
               <folding>
                 <element signature="e#47#69#0" expanded="true" />
               </folding>
@@ -78,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="average_method.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="average_method.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/average_method.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+            <state relative-caret-position="97">
+              <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -105,16 +104,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="960">
               <caret line="67" column="65" selection-start-line="67" selection-start-column="65" selection-end-line="67" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="word2vec_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/word2vec_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="34" column="29" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -165,10 +154,10 @@
         <option value="$PROJECT_DIR$/DealWithVector/load_google_w2v_bin_file.py" />
         <option value="$PROJECT_DIR$/Method2/average_method.py" />
         <option value="$PROJECT_DIR$/Word2Vec/gensim_word2vec.py" />
-        <option value="$PROJECT_DIR$/src/average_method.py" />
         <option value="$PROJECT_DIR$/src/GetReviewSentencesFromExcel.py" />
         <option value="$PROJECT_DIR$/src/Tools.py" />
         <option value="$PROJECT_DIR$/src/gensim_word2vec.py" />
+        <option value="$PROJECT_DIR$/src/average_method.py" />
       </list>
     </option>
   </component>
@@ -179,10 +168,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-319" />
-    <option name="y" value="-1080" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -306,7 +293,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.gensim_word2vec">
+  <component name="RunManager" selected="Python.average_method (1)">
     <configuration default="false" name="GetReviewSentencesFromExcel" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -614,8 +601,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.gensim_word2vec" />
-        <item index="1" class="java.lang.String" itemvalue="Python.average_method (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.average_method (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.gensim_word2vec" />
         <item index="2" class="java.lang.String" itemvalue="Python.average_method" />
         <item index="3" class="java.lang.String" itemvalue="Python.load_google_w2v_bin_file" />
         <item index="4" class="java.lang.String" itemvalue="Python.GetReviewSentencesFromExcel" />
@@ -645,16 +632,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-319" y="-1080" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18317358" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27786753" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27123287" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48514852" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37671232" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -703,19 +690,14 @@
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/average_method.py</url>
-          <line>58</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/average_method.py</url>
-          <line>59</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/gensim_word2vec.py</url>
           <line>43</line>
           <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/average_method.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -728,12 +710,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="40" />
+      <option name="time" value="41" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ExcelProcessor/GetReviewSentencesFromExcel.py" />
     <entry file="file://$PROJECT_DIR$/src/gensim_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -869,14 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/average_method.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tools.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
@@ -889,11 +862,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gensim_word2vec.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="168" column="30" selection-start-line="148" selection-start-column="2" selection-end-line="168" selection-end-column="30" />
+        <state relative-caret-position="218">
+          <caret line="158" column="20" selection-start-line="158" selection-start-column="20" selection-end-line="158" selection-end-column="20" />
           <folding>
             <element signature="e#47#69#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/sklearn/svm/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1219">
+          <caret line="110" column="8" selection-start-line="110" selection-start-column="8" selection-end-line="110" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/average_method.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>

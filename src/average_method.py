@@ -40,21 +40,28 @@ def get_X_train():
     x_train = Tools.get_sentences_from_excel(dir, [0, 1, 2, 3, 4])
     x_train_transfered = []
     y_train = []
+    counter = 0
     for line in x_train:
+        counter += 1
+        print counter, '/', len(x_train)
         comment = line[1]
         line_index = str(line[0])
         dimension = line[3].encode('utf8')
         sentiment_label = line[4].encode('utf8')
         sentence_vec = get_vector_for_sentence(comment)
         label = category_dic[dimension] * sentiment_dic[sentiment_label]
-        x_train_transfered.append([sentence_vec])
+        x_train_transfered.append(sentence_vec)
         y_train.append(label)
+        # print sentence_vec
+        # print label
     return x_train_transfered, y_train
 
 
-def get_Y_train():
-    return
-
-
 x_train, y_train = get_X_train()
-print x_train, y_train
+from sklearn import svm, cross_validation
+
+# model = svm.SVC()
+# model.fit
+clf = svm.SVC(kernel='linear', C=1)
+scores = cross_validation.cross_val_score(clf, x_train, y_train, cv=5, score_func=None)
+print scores
