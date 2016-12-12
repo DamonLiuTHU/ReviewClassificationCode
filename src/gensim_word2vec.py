@@ -143,7 +143,7 @@ def get_sentence_list():
 # model.save(u"review.model.bin")
 
 
-model = gensim.models.Word2Vec.load(u"review.model.bin")
+
 
 
 # # 计算两个词的相似度/相关程度
@@ -168,6 +168,6 @@ model = gensim.models.Word2Vec.load(u"review.model.bin")
 # y4 = model[u'京东']
 # print y4, type(y4), y4.shape
 
-
+model = gensim.models.Word2Vec.load(u"review.model.bin")
 def get_vector_for_unicode_word(word):
     return model[word]

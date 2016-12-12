@@ -41,6 +41,7 @@ def get_X_train():
     x_train_transfered = []
     y_train = []
     counter = 0
+    file = open('../data/average_method_input.txt','w')
     for line in x_train:
         counter += 1
         print counter, '/', len(x_train)
@@ -54,6 +55,10 @@ def get_X_train():
         y_train.append(label)
         # print sentence_vec
         # print label
+        tmp = str(sentence_vec)+','+str(label)+'\n'
+        # print tmp
+        file.write(tmp)
+    file.close()
     return x_train_transfered, y_train
 
 
@@ -62,6 +67,7 @@ from sklearn import svm, cross_validation
 
 # model = svm.SVC()
 # model.fit
+import sklearn
 clf = svm.SVC(kernel='linear', C=1)
-scores = cross_validation.cross_val_score(clf, x_train, y_train, cv=5, score_func=None)
+scores = sklearn.model_selection.corss_val_score(s, x_train, y_train, cv=5)
 print scores
